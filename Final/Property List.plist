@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>restaurantName</key>
+	<array>
+		<string>Aloha Salads</string>
+		<string>Denny&apos;s</string>
+		<string>Outback Steakhouse</string>
+		<string>Panda Express</string>
+		<string>Ramen-Ya</string>
+		<string>Wendys</string>
+	</array>
+	<key>restaurantDescription</key>
+	<array>
+		<string>The first Aloha Salads opened its doors in May of 2006 in the quiet beach town of Kailua, Hawaii. From that day forward, local customers and visitors to Hawai&apos;i have lined up to enjoy the healthy offerings of locally grown Hawaiian fruits and vegetables, gourmet meats and cheeses and delectable home-made dressings.</string>
+		<string>Denny&apos;s is America&apos;s diner. This is where guests have come for over 60 years now to sit back, relax and enjoy delicious, hearty meals 24/7, every day of the year. From breakfast anytime to satisfying lunches and dinners, if you&apos;re in the mood for it, chances are we&apos;re serving it.</string>
+		<string>Outback Steakhouse. Outback Steakhouse is an Australian-themed American casual dining restaurant chain, serving American cuisine, based in Tampa, Florida, with over 1,000 locations in 23 countries throughout North and South America, Asia, and Australia.</string>
+		<string>Bringing people together to share joy has been our family&apos;s inspiration since opening the first Panda Express in 1983 in Glendale, California. As we continue to open restaurants from coast to coast and around the world, the bold flavors of Chinese cuisine inspire our cooking, while our extended family of guests and associates remains at the heart of what we do. Welcome to our family&apos;s Chinese Kitchen.</string>
+		<string>WELCOME TO RAMEN-YA. HOME OF THE BIG BOWL. We are proud to be locally-owned and operated. Our Mission is to serve healthy, good quality Japanese &quot;comfort food&quot; with a local flair. We take pride in providing outstanding food, at a great price in a bright, clean and modern atmosphere.</string>
+		<string>Dave Thomas founded Wendy&apos;s with a vision of serving up a quick meal without cutting any corners. As we continue to grow, we&apos;ll always be sure to keep Dave&apos;s traditions and legacy in mind. By partnering with the best suppliers in the business, we&apos;re able to serve up fresh, Deliciously Different® food every day</string>
+	</array>
+	<key>restaurantImage</key>
+	<array>
+		<string>1</string>
+		<string>2</string>
+		<string>3</string>
+		<string>4</string>
+		<string>5</string>
+		<string>6</string>
+	</array>
+</dict>
+</plist>
