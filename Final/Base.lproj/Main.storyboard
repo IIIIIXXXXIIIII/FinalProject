@@ -146,6 +146,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9r2-h4-Chf"/>
+                    <connections>
+                        <outlet property="mapView" destination="aSQ-Kb-l1g" id="R45-2e-74N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

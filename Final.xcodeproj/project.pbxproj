@@ -15,6 +15,7 @@
 		18104FAE20993B0B00AC7156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18104FAC20993B0B00AC7156 /* LaunchScreen.storyboard */; };
 		18104FB62099447700AC7156 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18104FB52099447700AC7156 /* Property List.plist */; };
 		18104FB82099521900AC7156 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18104FB72099521900AC7156 /* detailViewController.swift */; };
+		18104FBA2099686900AC7156 /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18104FB92099686900AC7156 /* Restaurants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		18104FAF20993B0B00AC7156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18104FB52099447700AC7156 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		18104FB72099521900AC7156 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		18104FB92099686900AC7156 /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				18104FB72099521900AC7156 /* detailViewController.swift */,
 				18104FA520993B0A00AC7156 /* SecondViewController.swift */,
 				18104FA720993B0A00AC7156 /* Main.storyboard */,
+				18104FB92099686900AC7156 /* Restaurants.swift */,
 				18104FB52099447700AC7156 /* Property List.plist */,
 				18104FAA20993B0B00AC7156 /* Assets.xcassets */,
 				18104FAC20993B0B00AC7156 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18104FBA2099686900AC7156 /* Restaurants.swift in Sources */,
 				18104FA620993B0A00AC7156 /* SecondViewController.swift in Sources */,
 				18104FA220993B0A00AC7156 /* AppDelegate.swift in Sources */,
 				18104FA420993B0A00AC7156 /* FirstViewController.swift in Sources */,
