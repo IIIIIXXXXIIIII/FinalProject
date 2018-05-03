@@ -12,11 +12,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     var restaurantArray = ["Aloha Salads", "Dennys", "Outback Steakhouse", "Panda Express", "Ramen-Ya", "Wendys"]
     
-    var restaurantImage = [String]()
+    var restaurantImageData = [String]()
     
-    var restaurantName = [String]()
+    var restaurantNameData = [String]()
     
-    var restaurantDescription = [String]()
+    var restaurantDescriptionData = [String]()
     
     @IBOutlet weak var restaurantsTableView: UITableView!
     
@@ -29,9 +29,9 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let dict = NSDictionary(contentsOfFile: path!)
         
-        restaurantImageData = dict!.objects(forKey:"restaurantImage") as! [String]
+       restaurantImageData = dict!.objects(forKey:"restaurantImage") as! [String]
         
-        restaurantNameData = dict!.objects(forKeys: "restaurantName") as! [String]
+       restaurantNameData = dict!.objects(forKeys: "restaurantName") as! [String]
         
         restaurantDescriptionData = dict!.objects(forKeys: "restaurantDescription") as! [String]
         
@@ -46,7 +46,7 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantImage.count
+        return restaurantNameData.count
         
     }
     
@@ -65,10 +65,17 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             let s1 = segue.destination as! detailViewController
             
-            let imageindex =
-                tableView.indexPathForSelectedRow?.row
+            let imageIndex = restaurantsTableView.indexPathForSelectedRow?.row
             
-            s1.imagepass = restaurantImageData[String]
+            let descriptionIndex = restaurantsTableView.indexPathForSelectedRow?.row
+            
+            let titleIndex = restaurantsTableView.indexPathForSelectedRow?.row
+            
+            s1.imagePass = restaurantImageData
+            
+            s1.descriptionPass = restaurantDescriptionData
+            
+            s1.titlePass = restaurantNameData
         }
     }
     

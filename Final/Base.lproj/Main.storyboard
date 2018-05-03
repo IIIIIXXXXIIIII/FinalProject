@@ -88,6 +88,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UZM-Iw-b3x">
                                 <rect key="frame" x="16" y="87" width="343" height="241"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="imageView"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mG4-DR-C9S">
                                 <rect key="frame" x="67" y="415" width="240" height="128"/>
@@ -95,6 +96,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="hTK-yb-PgZ" id="RGb-tj-OQv"/>
+                                </connections>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -103,7 +107,7 @@
                     <navigationItem key="navigationItem" id="6ps-vH-iV9"/>
                     <connections>
                         <outlet property="imageView" destination="UZM-Iw-b3x" id="b9z-uf-9a7"/>
-                        <outlet property="textView" destination="mG4-DR-C9S" id="c0u-hh-Ycy"/>
+                        <outlet property="textView" destination="mG4-DR-C9S" id="gzv-Jm-wC3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVB-b6-oKb" userLabel="First Responder" sceneMemberID="firstResponder"/>

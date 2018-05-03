@@ -8,23 +8,25 @@
 
 import UIKit
 
-class detailViewController: UIViewController {
+class detailViewController: UIViewController, UITextViewDelegate {
 
-    var imagepass: String?
-    var titlepass: String?
-    var descriptionpass: String?
+    var imagePass: String?
+    var titlePass: String?
+    var descriptionPass: String?
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = titlePass
 
-        if let imageName = imagepass {
+        if let imageName = imagePass {
             imageView.image = UIImage(named: imageName)
-            
-            if let Textview = textpass {
-                textView.text = UIText(named:textView)
+    
+        if let Textview = descriptionPass {
+            textView.text = UITextView[String]
                 
             }
             
