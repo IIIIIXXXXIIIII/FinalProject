@@ -17,25 +17,34 @@ class SecondViewController: UIViewController {
     
     let intialLocation = CLLocation(latitude: 21.329099, longitude: -158.088889)
     
-    let regionRadius = CLLocationDistance = 1000
+    let regionRadius : CLLocationDistance = (1000)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = ["Map"]
+        centerMapOnLocation(location: intialLocation)
         
-        centerMapOnLocation(location: initialLocation)
+        let restaurantOne = Restaurants(title: "Aloha Salads", type: "Local", coordinate: CLLocationCoordinate2D (latitude: 21.331378, longitude: -158.091572))
+        mapView.addAnnotation(restaurantOne)
         
-        let restaurantOne = restaurant(title: "Aloha Salads", type: "Local", coordinate: CLLocationCoordinate2D (latitude: 21.3829, longitude: -157.9400))
-        let restaurantTwo = restaurant(title: "Dennys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3293, longitude: -158.0923))
-        let restaurantThree = restaurant(title: "Outback Steakhouse", type: "Australian", coordinate: CLLocationCoordinate2D (latitude: 21.3284, longitude: -158.0869))
-        let restaurantFour = restaurant(title: "Panda Express", type: "American Oriental", coordinate: CLLocationCoordinate2D (latitude: 21.3291, longitude: -158.0865))
-        let restaurantFive = restaurant(title: "Ramen-Ya", type: "Japanese", coordinate: CLLocationCoordinate2D (latitude: 21.33350, longitude: -158.0900))
-        let restaurantSix = restaurant(title: "Wendys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3307, longitude: -158.0859))
+        let restaurantTwo = Restaurants(title: "Dennys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.329315, longitude: -158.092312))
+        mapView.addAnnotation(restaurantTwo)
         
+        let restaurantThree = Restaurants(title: "Outback Steakhouse", type: "Australian", coordinate: CLLocationCoordinate2D (latitude: 21.328439, longitude: -158.0869))
+        mapView.addAnnotation(restaurantThree)
+        
+        let restaurantFour = Restaurants(title: "Panda Express", type: "American Oriental", coordinate: CLLocationCoordinate2D (latitude: 21.329534, longitude: -158.086524))
+        mapView.addAnnotation(restaurantFour)
+        
+        let restaurantFive = Restaurants(title: "Ramen-Ya", type: "Japanese", coordinate: CLLocationCoordinate2D (latitude: 21.330541, longitude: -158.090069))
+        mapView.addAnnotation(restaurantFive)
+        
+        let restaurantSix = Restaurants(title: "Wendys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.330757, longitude: -158.085741))
+        mapView.addAnnotation(restaurantSix)
     }
         func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate.regionRadius)
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate, regionRadius, regionRadius)
+            mapView.setRegion(coordinateRegion, animated: true)
         
         // Do any additional setup after loading the view, typically from a nib.
     }

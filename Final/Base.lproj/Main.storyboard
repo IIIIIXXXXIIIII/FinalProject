@@ -106,8 +106,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="6ps-vH-iV9"/>
                     <connections>
-                        <outlet property="imageView" destination="UZM-Iw-b3x" id="b9z-uf-9a7"/>
-                        <outlet property="textView" destination="mG4-DR-C9S" id="gzv-Jm-wC3"/>
+                        <outlet property="imageView" destination="UZM-Iw-b3x" id="JHA-CH-nl3"/>
+                        <outlet property="textView" destination="mG4-DR-C9S" id="TJv-S3-s7g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVB-b6-oKb" userLabel="First Responder" sceneMemberID="firstResponder"/>

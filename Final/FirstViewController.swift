@@ -23,17 +23,15 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = ["Restaurants"]
-        
         let path = Bundle.main.path(forResource: "Property List", ofType: "plist")
         
         let dict = NSDictionary(contentsOfFile: path!)
         
-       restaurantImageData = dict!.objects(forKey:"restaurantImage") as! [String]
+        restaurantImageData = dict!.object(forKey: "restaurantImage" ) as! [String]
         
-       restaurantNameData = dict!.objects(forKeys: "restaurantName") as! [String]
+        restaurantNameData = dict!.object(forKey: "restaurantName" ) as! [String]
         
-        restaurantDescriptionData = dict!.objects(forKeys: "restaurantDescription") as! [String]
+        restaurantDescriptionData = dict!.object(forKey: "restaurantDescription" ) as! [String]
         
         self.restaurantsTableView.delegate = self
         self.restaurantsTableView.dataSource = self
@@ -71,11 +69,11 @@ class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             let titleIndex = restaurantsTableView.indexPathForSelectedRow?.row
             
-            s1.imagePass = restaurantImageData
+            s1.imagePass = restaurantImageData[imageIndex!]
             
-            s1.descriptionPass = restaurantDescriptionData
+            s1.descriptionPass = restaurantDescriptionData[descriptionIndex!]
             
-            s1.titlePass = restaurantNameData
+            s1.titlePass = restaurantNameData[titleIndex!]
         }
     }
     

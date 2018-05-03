@@ -14,40 +14,32 @@ class detailViewController: UIViewController, UITextViewDelegate {
     var titlePass: String?
     var descriptionPass: String?
     
+
     @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textView.delegate = self
+        
+        textView.isEditable = false
+        
+        self.view.backgroundColor = .blue
+        
         self.title = titlePass
 
-        if let imageName = imagePass {
-            imageView.image = UIImage(named: imageName)
-    
-        if let Textview = descriptionPass {
-            textView.text = UITextView[String]
-                
-            }
-            
-    }
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
+        if let imageName = imagePass { imageView.image = UIImage(named: imageName)
+        }
+        
+        if let outputText = descriptionPass { textView.text = outputText
+        }
+        
+     func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+       
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+}
+
