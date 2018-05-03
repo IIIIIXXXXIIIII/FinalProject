@@ -26,12 +26,12 @@ class SecondViewController: UIViewController {
         
         centerMapOnLocation(location: initialLocation)
         
-        let restaurantOne = Restaurant(title: "Aloha Salads", type: "Local", coordinate: CLLocationCoordinate2D (latitude: 21.3829, longitude: -157.9400))
-        let restaurantTwo = Restaurant(title: "Dennys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3293, longitude: -158.0923))
-        let restaurantThree = Restaurant(title: "Outback Steakhouse", type: "Australian", coordinate: CLLocationCoordinate2D (latitude: 21.3284, longitude: -158.0869))
-        let restaurantFour = Restaurant(title: "Panda Express", type: "American Oriental", coordinate: CLLocationCoordinate2D (latitude: 21.3291, longitude: -158.0865))
-        let restaurantFive = Restaurant(title: "Ramen-Ya", type: "Japanese", coordinate: CLLocationCoordinate2D (latitude: 21.33350, longitude: -158.0900))
-        let restaurantSix = Restaurant(title: "Wendys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3307, longitude: -158.0859))
+        let restaurantOne = restaurant(title: "Aloha Salads", type: "Local", coordinate: CLLocationCoordinate2D (latitude: 21.3829, longitude: -157.9400))
+        let restaurantTwo = restaurant(title: "Dennys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3293, longitude: -158.0923))
+        let restaurantThree = restaurant(title: "Outback Steakhouse", type: "Australian", coordinate: CLLocationCoordinate2D (latitude: 21.3284, longitude: -158.0869))
+        let restaurantFour = restaurant(title: "Panda Express", type: "American Oriental", coordinate: CLLocationCoordinate2D (latitude: 21.3291, longitude: -158.0865))
+        let restaurantFive = restaurant(title: "Ramen-Ya", type: "Japanese", coordinate: CLLocationCoordinate2D (latitude: 21.33350, longitude: -158.0900))
+        let restaurantSix = restaurant(title: "Wendys", type: "American", coordinate: CLLocationCoordinate2D (latitude: 21.3307, longitude: -158.0859))
         
     }
         func centerMapOnLocation(location: CLLocation) {
